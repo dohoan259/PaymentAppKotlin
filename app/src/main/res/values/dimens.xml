@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="layout_container_padding_start">35dp</dimen>
+    <dimen name="layout_container_padding_end">35dp</dimen>
+    <dimen name="switch_thumb_radius">15dp</dimen>
+    <dimen name="switch_layout_height">32dp</dimen>
+    <dimen name="switch_track_radius">16dp</dimen>
+    <dimen name="switch_layout_width">51dp</dimen>
+    <dimen name="transaction_item_icon_layout_width">37dp</dimen>
+    <dimen name="transaction_item_icon_layout_height">37dp</dimen>
+    <dimen name="transaction_item_header_text_size">17sp</dimen>
+    <dimen name="transaction_item_message_text_size">14sp</dimen>
+    <dimen name="transaction_item_currency_text_size">20sp</dimen>
+    <dimen name="transaction_item_margin_start">15dp</dimen>
+    <dimen name="transaction_item_margin_end">15dp</dimen>
+    <dimen name="transaction_item_margin_top">18dp</dimen>
+    <dimen name="transaction_item_margin_bottom">18dp</dimen>
+    <dimen name="transaction_list_layout_height">460dp</dimen>
+</resources>

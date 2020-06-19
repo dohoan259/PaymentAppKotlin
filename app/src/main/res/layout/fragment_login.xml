@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:background="@drawable/bg_window">
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/layout_container_padding_start"
+        android:paddingEnd="@dimen/layout_container_padding_end">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="145dp"
+                android:layout_marginBottom="40dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:inputType="textCapCharacters"
+
+                    android:fontFamily="fonts/Proxima-Nova-Bold.ttf"
+                    android:textSize="36sp"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/ic_faster_pay_logo"
+                    android:drawablePadding="7dp"/>
+
+                <View
+                    android:layout_width="76dp"
+                    android:layout_height="1dp"
+                    android:background="#D8D8D8"
+                    android:layout_marginTop="22.5dp"
+                    android:layout_marginBottom="22.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    fontPath="fonts/Proxima-Nova-Light.otf"
+                    android:textSize="30sp"
+                    android:lineSpacingExtra="6dp"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="31dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/use_your"
+                        fontPath="fonts/Proxima-Nova-Light.otf"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/passport"
+                        fontPath="fonts/Proxima-Nova-Bold.otf"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="4dp"
+                        android:drawableStart="@drawable/ic_passport"
+                        android:drawablePadding="4dp"
+                        android:layout_marginStart="4dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account"
+                        fontPath="fonts/Proxima-Nova-Light.otf"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:id="@+id/email_et"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:hint="@string/email"
+                    android:background="@drawable/bg_input_view"
+                    android:layout_marginTop="57dp"
+                    android:textColorHint="@color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/white"
+                    fontPath="fonts/Proxima-Nova-Medium.otf"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:id="@+id/password_et"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:hint="@string/password"
+                    android:background="@drawable/bg_input_view"
+                    android:layout_marginTop="22dp"
+                    android:textColorHint="@color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot_password"
+                    fontPath="fonts/Proxima-Nova-Light.ttf"
+                    android:textSize="18sp"
+                    android:textColor="@color/high_light_text_color"
+                    android:layout_marginTop="23dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/bg_button"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    fontPath="fonts/Proxima-Nova-Medium.otf"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sign_up_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button"
+                    android:text="@string/sign_up"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="13dp"
+                    android:backgroundTint="@color/secondary_button_color"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    fontPath="fonts/Proxima-Nova-Medium.otf"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/progress_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/progress_bar_background"
+        android:visibility="gone"
+        android:fitsSystemWindows="true"
+        android:clickable="true">
+
+        <ProgressBar
+            android:id="@+id/progress_bar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</FrameLayout>

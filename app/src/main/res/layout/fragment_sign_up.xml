@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:background="@drawable/bg_window">
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/layout_container_padding_start"
+        android:paddingEnd="@dimen/layout_container_padding_end">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="29dp">
+
+                <ImageView
+                    android:layout_width="164dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_passport_logo"
+                    android:scaleType="fitCenter"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_a_personal_account"
+                    fontPath="fonts/Proxima-Nova-Light.ttf"
+                    android:textSize="24sp"
+                    android:lineSpacingExtra="2.5dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="19dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to_use"
+                    fontPath="fonts/Proxima-Nova-Medium.ttf"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="1dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="9dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:inputType="textCapCharacters"
+                    fontPath="fonts/Proxima-Nova-Bold.ttf"
+                    android:textSize="36sp"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/ic_faster_pay_logo"
+                    android:layout_marginTop="17dp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:id="@+id/email_et"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:hint="@string/email"
+                    android:background="@drawable/bg_input_view"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="@color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/white"
+                    fontPath="fonts/Proxima-Nova-Medium.otf"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:id="@+id/password_et"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:hint="@string/create_password"
+                    android:background="@drawable/bg_input_view"
+                    android:layout_marginTop="25dp"
+                    android:textColorHint="@color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password_constrain"
+                    fontPath="fonts/Proxima-Nova-Medium.otf"
+                    android:textSize="12sp"
+                    android:lineSpacingExtra="1dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/first_name_et"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:hint="@string/legal_first_name"
+                    android:background="@drawable/bg_input_view"
+                    android:layout_marginTop="14dp"
+                    android:textColorHint="@color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/white"
+                    fontPath="fonts/Proxima-Nova-Medium.otf" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textNoSuggestions"
+                    android:id="@+id/last_name_et"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:hint="@string/legal_last_name"
+                    android:background="@drawable/bg_input_view"
+                    android:layout_marginTop="25dp"
+                    android:textColorHint="@color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/birthday_et"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:hint="@string/birthday"
+                    android:background="@drawable/bg_input_view"
+                    android:layout_marginTop="25dp"
+                    android:textColorHint="@color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/white"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="23dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/agreement_switch"
+                        android:layout_width="@dimen/switch_layout_width"
+                        android:layout_height="@dimen/switch_layout_height"
+                        android:checked="true"
+                         android:switchMinWidth="0dp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/user_agreement_and_policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/agreement_switch"
+                        android:text="@string/user_agreement_and_policy"
+                        fontPath="fonts/Proxima-Nova-Regular.ttf"
+                        android:textSize="12sp"
+                        android:layout_marginStart="12dp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sign_up_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button"
+                    android:text="@string/sign_up"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="18dp"
+                    fontPath="fonts/Proxima-Nova-Medium.otf"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_button"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/secondary_button_color"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    fontPath="fonts/Proxima-Nova-Medium.otf"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/progress_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/progress_bar_background"
+        android:visibility="gone"
+        android:fitsSystemWindows="true"
+        android:clickable="true">
+
+        <ProgressBar
+            android:id="@+id/progress_bar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</FrameLayout>

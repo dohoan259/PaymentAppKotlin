@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wallet_info"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:inputType="textCapCharacters"
+                fontPath="fonts/Proxima-Nova-Bold.ttf"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_faster_pay_logo"
+                android:layout_marginTop="23dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/available_balance"
+                fontPath="fonts/Proxima-Nova-Medium.ttf"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="19dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/currency_unit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dollar_unit"
+                    fontPath="fonts/Proxima-Nova-Medium.ttf"
+                    android:textSize="23sp"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/balance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100.00"
+                    fontPath="fonts/Proxima-Nova-Medium.ttf"
+                    android:textSize="38sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="3dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="87dp"
+                android:layout_marginEnd="87dp"
+                android:layout_marginTop="31dp">
+
+                <LinearLayout
+                    android:id="@+id/top_up_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/top_up_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_top_up"/>
+
+                    <TextView
+                        android:id="@+id/top_up_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/top_up"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="7dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vault_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:id="@+id/vault_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_top_up"/>
+
+                    <TextView
+                        android:id="@+id/vault_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vault"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="7dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transaction_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_rounded_frame"
+            android:layout_marginTop="284dp"/>
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

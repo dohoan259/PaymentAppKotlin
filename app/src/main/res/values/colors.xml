@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FEC013</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="progress_bar_background">#80FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="secondary_button_color">#7E7196</color>
+    <color name="transparent">#00000000</color>
+    <color name="high_light_text_color">#FEC013</color>
+    <color name="black">#FFFFFF</color>
+    <color name="transaction_item_text_color">#3D4956</color>
+    <color name="divider_back_ground_color">#D8D8D8</color>
+</resources>

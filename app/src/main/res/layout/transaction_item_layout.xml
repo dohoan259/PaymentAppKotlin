@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:gravity="center_vertical"
+    android:layout_marginStart="@dimen/transaction_item_margin_start"
+    android:layout_marginEnd="@dimen/transaction_item_margin_end"
+    android:layout_marginTop="@dimen/transaction_item_margin_top"
+    android:layout_marginBottom="@dimen/transaction_item_margin_bottom">
+
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="@dimen/transaction_item_icon_layout_width"
+        android:layout_height="@dimen/transaction_item_icon_layout_height"
+        android:background="@drawable/bg_transaction_item_icon"
+        android:src="@drawable/ic_steam"
+        android:scaleType="center"
+        android:layout_marginEnd="15dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/warcraft_game"
+            android:textSize="@dimen/transaction_item_header_text_size"
+            fontPath="fonts/Proxima-Nova-Regular.ttf"
+            android:textColor="@color/transaction_item_text_color"/>
+
+        <TextView
+            android:id="@+id/business_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pair_to_business"
+            android:textSize="@dimen/transaction_item_message_text_size"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_cost_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="- $ 6.99"
+            android:textSize="@dimen/transaction_item_currency_text_size"
+            fontPath="fonts/Proxima-Nova-Medium.ttf"/>
+
+        <TextView
+            android:id="@+id/transaction_warning_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/under_risk_review"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            fontPath="fonts/Proxima-Nova-Light.ttf"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/go_detail_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right"
+        android:layout_marginStart="12dp"/>
+
+</LinearLayout>

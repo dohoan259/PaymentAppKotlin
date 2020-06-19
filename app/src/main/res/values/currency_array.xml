@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currency_unit_array">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>VND</item>
+        <item>CNY</item>
+    </string-array>
+
+    <string-array name="currency_symbol_array">
+        <item>$</item>
+        <item>€</item>
+        <item>£</item>
+        <item>đ</item>
+        <item>¥</item>
+    </string-array>
+
+    <string-array name="exchange_rate_array">
+        <item>1.00</item>
+        <item>1.11</item>
+        <item>1.23</item>
+        <item>0.000043</item>
+        <item>0.14</item>
+    </string-array>
+</resources>

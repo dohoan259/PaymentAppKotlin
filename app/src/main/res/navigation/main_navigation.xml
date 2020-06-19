@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_wallet">
+
+    <fragment
+        android:id="@+id/navigation_wallet"
+        android:name="me.hp.paymentapp.ui.main.wallet.WalletFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_wallet" >
+        <action
+            android:id="@+id/action_navigation_wallet_to_authActivity"
+            app:destination="@id/authActivity"
+            app:popUpTo="@+id/authActivity"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_scan"
+        android:name="me.hp.paymentapp.ui.main.scan.ScanFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_scan" >
+        <action
+            android:id="@+id/action_navigation_scan_to_payActivity"
+            app:destination="@id/payActivity"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="me.hp.paymentapp.ui.main.profile.ProfileFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_authActivity"
+            app:destination="@id/authActivity"
+            app:popUpTo="@+id/authActivity"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/payActivity"
+        android:name="me.hp.paymentapp.ui.payment.PayActivity"
+        android:label="activity_pay"
+        tools:layout="@layout/activity_pay" >
+        <argument
+            android:name="orderItem"
+            app:argType="me.hp.paymentapp.data.uimodel.OrderItemUI" />
+    </activity>
+    <activity
+        android:id="@+id/authActivity"
+        android:name="me.hp.paymentapp.ui.auth.AuthActivity"
+        android:label="AuthActivity" />
+</navigation>
